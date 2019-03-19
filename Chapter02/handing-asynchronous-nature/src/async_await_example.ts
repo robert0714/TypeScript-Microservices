@@ -1,4 +1,4 @@
-import axios from 'Axios';
+import axios from 'axios';
 
 const asyncDemo1 = async () => {
     console.log("simple async call");

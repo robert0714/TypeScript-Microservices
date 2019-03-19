@@ -1,18 +1,16 @@
 import * as winston from 'winston';
 
-export const logger = new winston.Logger();
+export const logger =  winston.createLogger({
+  
+});
 
 const env = 'development';
 
 // Development Logger
 if(env === 'development') {
-  logger.add(winston.transports.Console, {
-    type: 'verbose',
-    colorize: true,
-    prettyPrint: true,
-    handleExceptions: true,
-    humanReadableUnhandledException: true
-  });
+  logger.add(new winston.transports.Console({
+    format: winston.format.simple()
+  }));
 }
 
 process.on('unhandledRejection', function (reason, p) {

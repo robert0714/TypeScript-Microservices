@@ -2,13 +2,18 @@
   "name": "handing-asynchronous-nature",
   "version": "1.0.0",
   "description": "handling aysnchronous nature",
-  "scripts": {},
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist"
+  },
   "author": "parth ghiya",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^8.5.1"
+    "@types/node": "^11.11.3"
   },
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.18.0"
   }
 }

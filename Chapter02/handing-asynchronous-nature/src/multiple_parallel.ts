@@ -1,4 +1,4 @@
-import axios from 'Axios';
+import axios from 'axios';
 
 async function executeParallelAsyncTasks () {
     const [ valueA, valueB, valueC ] = await 

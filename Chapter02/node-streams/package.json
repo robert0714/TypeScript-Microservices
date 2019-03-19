@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "this is project for custom transform stream implementation",
   "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist",
     "start":"tsc && node .\\dist\\stream_test.js"
   },
   "author": "parth ghiya",
