@@ -1,4 +1,4 @@
-import * as Rx from "Rxjs/Rx";
+import * as Rx from  'rxjs/Rx';
 
 /**
  Debounce:Ignore emitted values that take less than specified time. 

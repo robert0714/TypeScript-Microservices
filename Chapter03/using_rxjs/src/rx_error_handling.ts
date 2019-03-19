@@ -1,4 +1,4 @@
-import * as Rx from "Rxjs/Rx";
+import * as Rx from 'rxjs/Rx';
 /*
 retry: Retries an observable sequence a specific number of times should an error occur.
 */
